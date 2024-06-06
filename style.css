@@ -1,6 +1,53 @@
-h1{
+/* fonts */
+@font-face {
+    font-family: "Handlee";
+    src: url(fonts/Handlee/Handlee-Regular.ttf);
+}
+@font-face {
+    font-family: "Shadows";
+    src: url(fonts/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf);
+}
+
+header {
+    background-color: #EEE1F9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+h1 {
     color: purple;
     font-size: 50px;
-    text-align: center;
-    font-family: times new roman;
+    margin: 5px 0;
+    font-family: "Handlee";
+    font-weight: lighter;
+    padding: 0;
+}
+
+nav {
+    font-size: 25px;
+    font-family: "Handlee";
+    font-weight: lighter;
+    display: flex;
+    gap: 20px;
+}
+
+/* Ensure no bullets are displayed */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: purple;
+    text-decoration: none;
+}
+
+/* Additional styling for hover effect */
+nav a:hover {
+    text-decoration: underline;
 }
