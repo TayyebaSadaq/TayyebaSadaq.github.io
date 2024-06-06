@@ -150,6 +150,7 @@
 }
 
 .project-item img {
+    height: auto;
     max-height: 250px; /* Make sure the image takes up the full width of its container */
     height: auto; 
 }
