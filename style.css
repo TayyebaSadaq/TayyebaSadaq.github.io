@@ -8,46 +8,154 @@
     src: url(fonts/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf);
 }
 
-header {
-    background-color: #EEE1F9;
+@font-face{
+    font-family: "choco";
+    src: url(fonts/choco/ChochoCrunch-PKnKr.ttf);
+}
+@font-face{
+    font-family: "bubble-mint";
+    src: url("fonts/bubblemint/Bubble\ Mint.ttf")
+}
+@font-face{
+    font-family: "secret-memories";
+    src: url("fonts/secret memories/SecretMemoriesDemo-8MY3B.ttf")
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 300px; /* Fixed width for sidebar */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ecd2b8;
+    overflow-x: hidden;
+    padding-top: 20px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 10px 20px;
 }
 
-h1 {
-    color: purple;
-    font-size: 50px;
-    margin: 5px 0;
-    font-family: "Handlee";
-    font-weight: lighter;
-    padding: 0;
+.sidebar img {
+    width: 300px;
+    height: 300px;
 }
 
-nav {
-    font-size: 25px;
-    font-family: "Handlee";
-    font-weight: lighter;
-    display: flex;
-    gap: 20px;
-}
-
-/* Ensure no bullets are displayed */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-
-nav a {
-    color: purple;
+.sidebar a, .sidebar p {
+    padding: 10px;
     text-decoration: none;
+    color: #b86b37;
+    display: block;
+    margin: 0; 
+    text-align: center; 
 }
 
-/* Additional styling for hover effect */
-nav a:hover {
-    text-decoration: underline;
+
+.sidebar a {
+    font-size: 50px;
+    font-weight: 0.5px;
+    font-family: "secret-memories";
+}
+
+.sidebar p {
+    font-size: 30px; 
+}
+
+/* Reduce gap between a and p elements */
+.sidebar a + p {
+    margin-top: -5px; 
+}
+
+.sidebar a:hover {
+    background-color: #f3dbcb;
+    color: #964e28;
+    width:100%
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* Intro content */
+.intro {
+    margin-left: 320px; /* Adjust this value if the sidebar width changes */
+    padding: 20px;
+    font-family: "choco", cursive; /* Example font usage */
+    font-size: 50px;
+}
+
+.intro img {
+    float: right;
+    width: auto;
+    height: auto;
+    max-width: 150px; 
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .intro img {
+        max-width: 100%;
+        float: none;
+        margin: 0 auto 20px auto;
+        display: block;
+    }
+}
+/*Current content*/
+.current {
+    margin-left: 320px; /* Adjust this value if the sidebar width changes */
+    padding: 20px;
+    font-family: "choco", cursive; /* Example font usage */
+    font-size: 50px;
+}
+
+.current img {
+    float: left;
+    width: auto;
+    height: auto;
+    max-width: 150px; 
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .current img {
+        max-width: 100%;
+        float: none;
+        margin: 0 auto 20px auto;
+        display: block;
+    }
+}
+/* projects */
+.projects {
+    margin-left: 320px; /* Adjust this value if the sidebar width changes */
+    padding: 10px;
+    font-family: "choco", cursive; 
+    font-size: 50px;
+}
+
+.project-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Items start from left and wrap */
+}
+
+.project-item a {
+    flex: 0 0 auto; /* Items don't grow or shrink */
+    margin-right: 20px; /* Space between items */
+    margin-bottom: 20px; /* Space between rows */
+    text-align: center;
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Set link color */
+}
+
+.project-item img {
+    max-height: 250px; /* Make sure the image takes up the full width of its container */
+    height: auto; 
+}
+
+.project-item .label {
+    display: block; 
+    margin-top: 10px; 
+    font-size: 35px; 
 }
