@@ -25,7 +25,11 @@ const playlist = [
 ];
 
 document.addEventListener('DOMContentLoaded', function() {
-    player.play(); // Start playing the audio automatically when the page loads
+    player.addEventListener('canplaythrough', () => {
+        player.play(); // Start playing the audio automatically when it's fully loaded
+    });
+    player.src = playlist[currentTrackIndex].src; // Set the initial audio source
+    trackTitle.textContent = playlist[currentTrackIndex].title; // Set the initial track title
 });
 
 // Play or pause functionality
