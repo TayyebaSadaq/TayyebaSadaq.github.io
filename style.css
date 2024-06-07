@@ -1,30 +1,36 @@
-/* fonts */
+/* Global font import */
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+/* Font definitions */
 @font-face {
     font-family: "Handlee";
     src: url(fonts/Handlee/Handlee-Regular.ttf);
 }
+
 @font-face {
     font-family: "Shadows";
     src: url(fonts/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf);
 }
 
-@font-face{
+@font-face {
     font-family: "choco";
     src: url(fonts/choco/ChochoCrunch-PKnKr.ttf);
 }
-@font-face{
+
+@font-face {
     font-family: "bubble-mint";
-    src: url("fonts/bubblemint/Bubble\ Mint.ttf")
+    src: url("fonts/bubblemint/Bubble\ Mint.ttf");
 }
-@font-face{
+
+@font-face {
     font-family: "secret-memories";
-    src: url("fonts/secret memories/SecretMemoriesDemo-8MY3B.ttf")
+    src: url("fonts/secret memories/SecretMemoriesDemo-8MY3B.ttf");
 }
 
-
+/* Sidebar styling */
 .sidebar {
     height: 100%;
-    width: 300px; /* Fixed width for sidebar */
+    width: 300px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -42,15 +48,15 @@
     height: 300px;
 }
 
-.sidebar a, .sidebar p {
+.sidebar a,
+.sidebar p {
     padding: 10px;
     text-decoration: none;
     color: #b86b37;
     display: block;
-    margin: 0; 
-    text-align: center; 
+    margin: 0;
+    text-align: center;
 }
-
 
 .sidebar a {
     font-size: 50px;
@@ -59,30 +65,103 @@
 }
 
 .sidebar p {
-    font-size: 30px; 
+    font-size: 30px;
 }
 
 /* Reduce gap between a and p elements */
-.sidebar a + p {
-    margin-top: -5px; 
+.sidebar a+p {
+    margin-top: -5px;
 }
 
 .sidebar a:hover {
     background-color: #f3dbcb;
     color: #964e28;
-    width:100%
+    width: 100%;
 }
 
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
 }
+
+/* Music player styling */
+.player {
+    width: 640px;
+    background-color: var(--bg);
+    display: grid;
+    grid-template-columns: 64px 1fr 64px; /* Increased space between buttons */
+    grid-gap: 16px;
+    padding: 8px 24px;
+    position: fixed; /* Change position to fixed */
+    top: 0; /* Positioned at the top */
+    left: 50%; /* Center the player horizontally */
+    transform: translateX(-50%); /* Adjust to center */
+    border-radius: 64px;
+    z-index: 2; /* Ensure it's above other content */
+}
+
+.control {
+    height: 100%;
+    display: flex;
+    justify-content: space-between; /* Spread the buttons evenly */
+    align-items: center;
+    padding-block: 16px;
+}
+
+/* Styles for the previous track button */
+#prevbtn {
+    font-size: 24px; /* Set the font size */
+    color: #b77359; /* Set the color */
+}
+
+/* Styles for the play button */
+#playbtn {
+    font-size: 32px; /* Set the font size */
+    color: #b77359; /* Set the color */
+}
+
+/* Styles for the next track button */
+#nextbtn {
+    font-size: 24px; /* Set the font size */
+    color: #b77359; /* Set the color */
+}
+
+
+#playbtn:hover {
+    -webkit-text-fill-color: white;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+}
+
+#current {
+    text-align: right;
+}
+
+#progress {
+    display: block; /* Fixed typo */
+    width: var(--progress, 0%);
+    background-color: white;
+    transition: all 1s linear;
+    height: 100%;
+    margin: 0 auto; /* Center the progress bar horizontally */
+}
+
 
 /* Intro content */
 .intro {
-    margin-left: 320px; /* Adjust this value if the sidebar width changes */
-    padding: 20px;
-    font-family: "choco", cursive; /* Example font usage */
+    margin-left: 320px;
+    padding: 80px 20px 20px 20px; /* Adjust top padding for space under the music player */
+    font-family: "choco", cursive;
     font-size: 50px;
 }
 
@@ -90,7 +169,7 @@
     float: right;
     width: auto;
     height: auto;
-    max-width: 150px; 
+    max-width: 150px;
     margin-left: 20px;
 }
 
@@ -102,11 +181,12 @@
         display: block;
     }
 }
-/*Current content*/
+
+/* Current content */
 .current {
-    margin-left: 320px; /* Adjust this value if the sidebar width changes */
+    margin-left: 320px;
     padding: 20px;
-    font-family: "choco", cursive; /* Example font usage */
+    font-family: "choco", cursive;
     font-size: 50px;
 }
 
@@ -114,7 +194,7 @@
     float: left;
     width: auto;
     height: auto;
-    max-width: 150px; 
+    max-width: 150px;
     margin-left: 20px;
 }
 
@@ -126,37 +206,37 @@
         display: block;
     }
 }
-/* projects */
+
+/* Projects */
 .projects {
-    margin-left: 320px; /* Adjust this value if the sidebar width changes */
+    margin-left: 320px;
     padding: 10px;
-    font-family: "choco", cursive; 
+    font-family: "choco", cursive;
     font-size: 50px;
 }
 
 .project-item {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start; /* Items start from left and wrap */
+    justify-content: flex-start;
 }
 
 .project-item a {
-    flex: 0 0 auto; /* Items don't grow or shrink */
-    margin-right: 20px; /* Space between items */
-    margin-bottom: 20px; /* Space between rows */
+    flex: 0 0 auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
     text-align: center;
-    text-decoration: none; /* Remove underline from links */
-    color: #333; /* Set link color */
+    text-decoration: none;
+    color: #333;
 }
 
 .project-item img {
     height: auto;
-    max-height: 250px; /* Make sure the image takes up the full width of its container */
-    height: auto; 
+    max-height: 250px;
 }
 
 .project-item .label {
-    display: block; 
-    margin-top: 10px; 
-    font-size: 35px; 
+    display: block;
+    margin-top: 10px;
+    font-size: 35px;
 }
