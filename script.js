@@ -1,13 +1,52 @@
-const player = document.getElementById('player');
-const playBtn = document.getElementById('playbtn');
-const prevBtn = document.getElementById('prevbtn');
-const nextBtn = document.getElementById('nextbtn');
-const trackTitle = document.querySelector('.track-title');
-const progress = document.getElementById('progress');
-const currentTimeDisplay = document.getElementById('current');
+var player = document.getElementById("player");
+let progress = document.getElementById("progress");
+let playbtn = document.getElementById("playbtn");
+let current = document.getElementById("current");
+var playerContainer = document.querySelector(".player");
 
-let isPlaying = false;
-let currentTrackIndex = 0; // Initialize currentTrackIndex
+var playpause = function () {
+  if (player.paused) {
+    player.play();
+    playerContainer.classList.add("playing"); // Add "playing" class to player container when playing
+  } else {
+    player.pause();
+    playerContainer.classList.remove("playing"); // Remove "playing" class when paused
+  }
+}
+
+playbtn.addEventListener("click", playpause);
+
+player.onplay = function () {
+  playbtn.classList.remove("fa-play");
+  playbtn.classList.add("fa-pause");
+}
+
+player.onpause = function () {
+  playbtn.classList.add("fa-play");
+  playbtn.classList.remove("fa-pause");
+}
+
+player.ontimeupdate = function () {
+  let ct = player.currentTime;
+  current.innerHTML = timeFormat(ct);
+  //progress
+  let duration = player.duration;
+  prog = Math.floor((ct * 100) / duration);
+  progress.style.setProperty("--progress", prog + "%");
+}
+
+function timeFormat(ct) {
+  minutes = Math.floor(ct / 60);
+  seconds = Math.floor(ct % 60);
+
+  if (seconds < 10) {
+    seconds = "0"+seconds;
+  }
+
+  return minutes + ":" + seconds;
+}
+
+let currentTrackIndex = 0;
 
 const playlist = [
     {
@@ -24,65 +63,22 @@ const playlist = [
     },
 ];
 
-document.addEventListener('DOMContentLoaded', function() {
-    player.addEventListener('canplaythrough', () => {
-        player.play(); // Start playing the audio automatically when it's fully loaded
-    });
-    player.src = playlist[currentTrackIndex].src; // Set the initial audio source
-    trackTitle.textContent = playlist[currentTrackIndex].title; // Set the initial track title
-});
-
-// Play or pause functionality
-playBtn.addEventListener('click', () => {
-    if (isPlaying) {
-        player.pause();
-        playBtn.classList.remove('fa-pause');
-        playBtn.classList.add('fa-play');
-    } else {
-        player.play();
-        playBtn.classList.remove('fa-play');
-        playBtn.classList.add('fa-pause');
-    }
-    isPlaying = !isPlaying;
-});
-
 // Next track functionality
-nextBtn.addEventListener('click', () => {
+function playNextTrack() {
     currentTrackIndex++;
     if (currentTrackIndex >= playlist.length) {
         currentTrackIndex = 0; // Loop back to the first track if at the end of the playlist
     }
     player.src = playlist[currentTrackIndex].src;
-    trackTitle.textContent = playlist[currentTrackIndex].title;
     player.play();
-});
+}
 
 // Previous track functionality
-prevBtn.addEventListener('click', () => {
+function playPreviousTrack() {
     currentTrackIndex--;
     if (currentTrackIndex < 0) {
         currentTrackIndex = playlist.length - 1; // Go to the last track if at the beginning of the playlist
     }
     player.src = playlist[currentTrackIndex].src;
-    trackTitle.textContent = playlist[currentTrackIndex].title;
     player.play();
-});
-
-// Update progress bar
-player.addEventListener('timeupdate', () => {
-    const duration = player.duration;
-    const currentTime = player.currentTime;
-    const progressPercent = (currentTime / duration) * 100;
-    progress.style.width = `${progressPercent}%`;
-    currentTimeDisplay.textContent = formatTime(currentTime);
-});
-
-// Format time as mm:ss
-function formatTime(time) {
-    const minutes = Math.floor(time / 60);
-    let seconds = Math.floor(time % 60);
-    if (seconds < 10) {
-        seconds = `0${seconds}`;
-    }
-    return `${minutes}:${seconds}`;
 }
