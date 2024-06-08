@@ -12,7 +12,6 @@
 
 <body>
     <header>
-
         <div class="sidebar">
             <img src="images/profile.png" alt="profile picture">
             <a href="https://github.com/TayyebaSadaq">Github</a>
@@ -22,18 +21,38 @@
             <a href="https://womenin-stem.github.io">Blog</a>
         </div>
 
-        <div class="intro">
+        <section id="about-me" class="intro">
+            <h1>About Me</h1>
             <img src="images/pusheen-tea.gif" alt="Plusheen tea gif">
             <p>Hi, I'm a Computer science and software student currently at the University of Derby working towards
                 being a full stack developer.</p>
-        </div>
-        <div class="current">
             <img src="images/working.gif" alt="at work">
             <p>Currently, I'm working towards my final year and graduation from university.</p>
+        </section>
 
-        </div>
 
-        <div class="projects">
+        <section id="certificates" class="certificate">
+            <h1>Certificates and Courses</h1>
+            <div class="certificate-info">
+                <div class="certificate-item">
+                    <img src="images/CFG.png" alt="Code First Girls" class="certificate-logo">
+                    <div class="certificate-text">
+                        <a href="images/certificates/sql.png" target="_blank">Barclays - Introduction to Data & SQL certificate</a>
+                    </div>
+                </div>
+            </div>
+            <div class="certificate-info">
+                <div class="certificate-item">
+                    <img src="images/CFG.png" alt="Code First Girls" class="certificate-logo">
+                    <div class="certificate-text">
+                        <a href="images/certificates/JS.png" target="_blank">Smartsheet - Introduction to JavaScript</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="projects" class="projects">
             <h1>Projects</h1>
             <p>Here are some of the projects I have worked on:</p>
             <div class="project-item">
@@ -55,10 +74,10 @@
                 </a>
                 <a href="https://github.com/TayyebaSadaq/Recipe-Roulette">
                     <img src="images/recipie-roulette.gif" alt="project 5">
-                    <span class="label">Recipie Roulette</span>
+                    <span class="label">Recipe Roulette</span>
                 </a>
             </div>
-        </div>
+        </section>
 
         <audio id="player" src="music/cafe-corner.mp3"></audio>
         <div class="player">
@@ -75,8 +94,6 @@
             </div>
             <div id="current">0:00</div>
         </div>
-
-
 
     </header>
     <script src="script.js"></script>

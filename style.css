@@ -68,7 +68,6 @@
     font-size: 30px;
 }
 
-/* Reduce gap between a and p elements */
 .sidebar a+p {
     margin-top: -5px;
 }
@@ -99,33 +98,29 @@
     padding: 8px 24px;
     position: absolute;
     top: 0;
-    left: calc(50% + 150px); /* Center the player horizontally with respect to the sidebar */
+    left: calc(50% + 150px); 
     transform: translateX(-50%);
     border-radius: 15px;
     z-index: 2;
 }
 
-/* Controls container */
 .control {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px; /* Space between buttons */
+    gap: 16px;
 }
 
-/* Styles for the previous track button */
 #prevbtn {
     font-size: 24px;
     color: #b77359;
 }
 
-/* Styles for the play button */
 #playbtn {
     font-size: 32px;
     color: #b77359;
 }
 
-/* Styles for the next track button */
 #nextbtn {
     font-size: 24px;
     color: #b77359;
@@ -135,7 +130,14 @@
     -webkit-text-fill-color: white;
 }
 
-/* Info container */
+#nextbtn:hover {
+    -webkit-text-fill-color: white;
+}
+
+#prevbtn:hover {
+    -webkit-text-fill-color: white;
+}
+
 .info {
     display: flex;
     justify-content: center;
@@ -145,12 +147,10 @@
     text-align: center;
 }
 
-/* Current time display */
 #current {
     text-align: right;
 }
 
-/* Progress bar */
 .bar {
     --space: -4px;
     background-color: #f3dbcb;
@@ -164,39 +164,29 @@
     z-index: -2;
 }
 
-/* Progress bar */
-#progress {
-    display: block;
-    width: var(--progress, 0%);
-    background-color: white;
-    transition: all 1s linear;
-    height: 4px; /* Adjust height to be less prominent */
-    margin: 0 auto;
-}
 
-/* Adjust player position and layout on smaller screens */
 @media screen and (max-width: 960px) {
     .player {
-        width: 80%; /* Reduce width gradually */
+        width: 80%;
         padding: 4px 12px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .player {
-        width: 60%; /* Further reduce width */
+        width: 60%;
     }
 }
 
 @media screen and (max-width: 576px) {
     .player {
-        width: 40%; /* Further reduce width */
+        width: 40%;
     }
 }
 
 @media screen and (max-width: 250px) {
     .player {
-        width: 100px; /* Set fixed width for very small screens */
+        width: 100px;
     }
 }
 
@@ -204,17 +194,25 @@
 /* Intro content */
 .intro {
     margin-left: 320px;
-    padding: 80px 20px 20px 20px; /* Adjust top padding for space under the music player */
+    padding: 15px 20px 20px 20px;
     font-family: "choco", cursive;
     font-size: 50px;
 }
 
-.intro img {
+#about-me.intro img:nth-of-type(1) {
     float: right;
     width: auto;
     height: auto;
     max-width: 150px;
     margin-left: 20px;
+}
+
+#about-me.intro img:nth-of-type(2) {
+    float: left;
+    width: auto;
+    height: auto;
+    max-width: 150px;
+    margin-right: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -226,30 +224,45 @@
     }
 }
 
-/* Current content */
-.current {
+
+/* Certificate section */
+.certificate {
     margin-left: 320px;
-    padding: 20px;
+    padding: 15px 20px 20px 20px; 
     font-family: "choco", cursive;
     font-size: 50px;
 }
 
-.current img {
-    float: left;
+.certificate-item {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 20px; 
+}
+
+.certificate-item img {
     width: auto;
     height: auto;
     max-width: 150px;
-    margin-left: 20px;
+    margin-right: 20px; 
 }
 
-@media screen and (max-width: 600px) {
-    .current img {
-        max-width: 100%;
-        float: none;
-        margin: 0 auto 20px auto;
-        display: block;
-    }
+.certificate-text {
+    font-size: 50px; 
 }
+
+/* Certificate link */
+.certificate-text a {
+    text-decoration: none; 
+    color: inherit;
+ 
+}
+
+/* Certificate link on hover */
+.certificate-text a:hover {
+    background-color: #f3dbcb; 
+    border-radius: 15px;
+}
+
 
 /* Projects */
 .projects {
