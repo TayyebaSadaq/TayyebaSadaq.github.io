@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cute Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p class="tagline">A little piece of my world in tech 🌸</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+            
+        </nav>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/tayyeba-sadaq/" aria-label="LinkedIn">
+                <img src="images/icons/linkedin.png" alt="LinkedIn" class="social-icon">
+            </a>
+            <a href="https://github.com/TayyebaSadaq" aria-label="GitHub">
+                <img src="images/icons/github.png" alt="GitHub" class="social-icon">
+            </a>
+            <a href="https://twitter.com" aria-label="Twitter">
+                <img src="images/icons/twitter.png" alt="Twitter" class="social-icon">
+            </a>
+        </div>
+        
+    </header>
+    
+    <section id="about">
+        <img src="images/dukie_pookie.jpeg" alt="Cute illustration" class="profile-pic">
+        <div>
+            <h2>About Me</h2>
+            <p>Hi!👋🏼
+            <br>
+            I'm a computer science student who loves to code and create things. I'm passionate about technology and how it can be used to solve real-world problems. I'm always looking for new opportunities to learn and grow. When I'm not coding, you can find me reading a book or playing games. 🎮📚
+            </p>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>My Projects</h2>
+        <p>Here is a peek into my recent projects 🔭</p>
+        <div class="project-tiles">
+            <div class="project-tile" onclick="openModal('Bookish Code', 'This project was my Buildspace 2024 idea where I designed and developed a book tracking application.', '<br><br>Language: React Expo', 'https://github.com/TayyebaSadaq/bookishCode')">
+                <img src="images/project/bookishcode.png" alt="Bookish Code" class="project-image">
+                <div class="overlay">Bookish Code</div>
+            </div>
+            <div class="project-tile" onclick="openModal('Aid Worker Simulation', 'This was a university group project where we created a unity text based simulation for an unnamed client that would help aid workers understand how to tackle difficult scenarios while working with refugees.', '<br><br>Language/software: C# and Unity', 'https://github.com/TayyebaSadaq/aid-worker-simulation')">
+                <img src="images/project/aidworker.png" alt="Aid Worker Simulation" class="project-image">
+                <div class="overlay">Aid Worker Simulation</div>
+            </div>
+            <div class="project-tile" onclick="openModal('Car Insurance System', 'This was a project for university where we were given a dataset to use and had to create a front and backend application that lets the user view, edit and delete data via CRUD APIs.', '<br><br>Languages: PHP', 'https://github.com/TayyebaSadaq/car-insurance-system')">
+                <img src="images/project/carinsurance.png" alt="Car Insurance System" class="project-image">
+                <div class="overlay">Car Insurance System</div>
+            </div>
+            <div class="project-tile" onclick="openModal('Airline Management System', 'This project was for a software engineering module where we worked on all elements of planning and designing before creating a system in a language of our choice. I chose Java and used a spiral methodolody to create the airline management system as I felt it was most feasable and allowed me to go back to previous work and do updates and alterations to the code', '<br><br>Language/methodology: Java and spiral methodology', 'https://github.com/TayyebaSadaq/airlinemanagementsystem')">
+                <img src="images/project/airline.png" alt="Airline Management System" class="project-image">
+                <div class="overlay">Airline Management System</div>
+            </div>
+            <div class="project-tile" onclick="openModal('Recipe Roulette', 'This was a group project as part of my CFG MOOC, intro to javascript where I collectively worked with my peers to create this website that helps you choose what to make for dinner via randomisation, also providing you recipes and a link to external sites.', '<br><br>Language: HTML,CSS and JavaScript', 'https://github.com/TayyebaSadaq/recipe-roulette')">
+                <img src="images/project/recipe.png" alt="Recipe Roulette" class="project-image">
+                <div class="overlay">Recipe Roulette</div>
+            </div>
+        </div>
+    </section>
+    
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="modal-title" class="modal-title"></h2>
+            </div>
+            <div class="modal-body">
+                <p id="modal-description"></p>
+                <ul id="modal-links"></ul> <!-- Added for the links -->
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
