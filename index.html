@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cute Portfolio</title>
+    <title>Tayyeba's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,7 +13,9 @@
         <nav>
             <ul>
                 <li><a href="#about">About Me</a></li>
+                <li><a href="#tech-stack">Tech Stack</a></li>
                 <li><a href="#projects">Projects</a></li>
+
             </ul>
             
         </nav>
@@ -23,6 +25,9 @@
             </a>
             <a href="https://github.com/TayyebaSadaq" aria-label="GitHub">
                 <img src="images/icons/github.png" alt="GitHub" class="social-icon">
+            </a>
+            <a href="other\Tayyeba Sadaq.pdf" aria-label="CV">
+                <img src="images/icons/cv.png" alt="CV" class="social-icon">
             </a>
         </div>
         
@@ -38,30 +43,45 @@
             </p>
         </div>
     </section>
-    
+
+    <section id="tech-stack">
+        <h2>Tech Stack</h2>
+        <div class="tech-stack-container">
+            <div class="tech-stack-wrapper">
+                <div class="badges">
+                    <img src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white" alt="C#">
+                    <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python">
+                    <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+                    <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript">
+                    <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+                    <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React">
+                    <img src="https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&logo=unity&logoColor=white" alt="Unity">
+                    <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code">
+                    <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="projects">
         <h2>My Projects</h2>
         <p>Here is a peek into my recent projects 🔭</p>
         <div class="project-tiles">
-            <div class="project-tile" onclick="openModal('Bookish Code', 'This project was my Buildspace 2024 idea where I designed and developed a book tracking application.', '<br><br>Language: React Expo', 'https://github.com/TayyebaSadaq/bookishCode')">
+            <div class="project-tile" onclick="openModal('Diabetes Sense', 'This project is my Dissertation for my BSc in Computer Science that combines the use of machine learning and explaianable AI into a react application that allows users to receive predictive diagnosis of diabetes based on medical history and lifestyle. giving updated news on the state of diabetes management and diagnosis on the homepage while also offering uses a page with advice and help with managing their condition in ways that lessen the overall impact to daily life', '<br><br>Language: React Expo, Python', 'https://github.com/TayyebaSadaq/Diabetes-Prediction-using-Machine-Learning-and-Explainable-AI-Techniques')">
+                <img src="images/project/diabetessense.png" alt="Diabetes Sense" class="project-image">
+                <div class="overlay">Diabetes Sense</div>
+            </div>
+            <div class="project-tile" onclick="openModal('Bookish Code', 'This project was my Buildspace 2024 idea where I designed and developed a book tracking application. Allowing the user to create an account, login and track their reading progress.', '<br><br>Language: React Expo', 'https://github.com/TayyebaSadaq/bookishCode')">
                 <img src="images/project/bookishcode.png" alt="Bookish Code" class="project-image">
                 <div class="overlay">Bookish Code</div>
-            </div>
-            <div class="project-tile" onclick="openModal('Aid Worker Simulation', 'This was a university group project where we created a unity text based simulation for an unnamed client that would help aid workers understand how to tackle difficult scenarios while working with refugees.', '<br><br>Language/software: C# and Unity', 'https://github.com/TayyebaSadaq/aid-worker-simulation')">
-                <img src="images/project/aidworker.png" alt="Aid Worker Simulation" class="project-image">
-                <div class="overlay">Aid Worker Simulation</div>
-            </div>
-            <div class="project-tile" onclick="openModal('Car Insurance System', 'This was a project for university where we were given a dataset to use and had to create a front and backend application that lets the user view, edit and delete data via CRUD APIs.', '<br><br>Languages: PHP', 'https://github.com/TayyebaSadaq/car-insurance-system')">
-                <img src="images/project/carinsurance.png" alt="Car Insurance System" class="project-image">
-                <div class="overlay">Car Insurance System</div>
-            </div>
-            <div class="project-tile" onclick="openModal('Airline Management System', 'This project was for a software engineering module where we worked on all elements of planning and designing before creating a system in a language of our choice. I chose Java and used a spiral methodolody to create the airline management system as I felt it was most feasable and allowed me to go back to previous work and do updates and alterations to the code', '<br><br>Language/methodology: Java and spiral methodology', 'https://github.com/TayyebaSadaq/airlinemanagementsystem')">
-                <img src="images/project/airline.png" alt="Airline Management System" class="project-image">
-                <div class="overlay">Airline Management System</div>
             </div>
             <div class="project-tile" onclick="openModal('Recipe Roulette', 'This was a group project as part of my CFG MOOC, intro to javascript where I collectively worked with my peers to create this website that helps you choose what to make for dinner via randomisation, also providing you recipes and a link to external sites.', '<br><br>Language: HTML,CSS and JavaScript', 'https://github.com/TayyebaSadaq/recipe-roulette')">
                 <img src="images/project/recipe.png" alt="Recipe Roulette" class="project-image">
                 <div class="overlay">Recipe Roulette</div>
+            </div>
+            <div class="project-tile" onclick="openModal('Piggy Bank', 'This was a group project as part of my CFG Software Engineering Degree, where I collectively worked with my peers to create this website that helps users manage and track their finances using a python backend with APIs to connect the frontend JavaScript to the SQL database', '<br><br>Language: HTML and CSS, JavaScript, Python, SQL', 'https://github.com/TayyebaSadaq/Group1-Project')">
+                <img src="images/project/piggybank.png" alt="Piggy Bank" class="project-image">
+                <div class="overlay">Piggy Bank</div>
             </div>
         </div>
     </section>
@@ -74,10 +94,11 @@
             </div>
             <div class="modal-body">
                 <p id="modal-description"></p>
-                <ul id="modal-links"></ul> <!-- Added for the links -->
+                <ul id="modal-links"></ul>
             </div>
         </div>
     </div>
+   
     
 
     <script src="script.js"></script>
