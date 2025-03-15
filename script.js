@@ -5,7 +5,7 @@ function openModal(title, description, language, repoLink) {
     const modalLinks = document.getElementById('modal-links');
     modalLinks.innerHTML = ''; 
     const li = document.createElement('li');
-    li.innerHTML = `<a href="${repoLink}" target="_blank">View Repository</a>`;
+    li.innerHTML = `<a href="${repoLink}" target="_blank">View</a>`;
     modalLinks.appendChild(li); 
 
     document.getElementById('project-modal').style.display = 'block';
