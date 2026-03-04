@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies & Blog - My Interests</title>
+
+    <!-- Link to our stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon - Tea cup emoji -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75'>☕</text></svg>">
+</head>
+
+<body>
+
+    <!-- ═══════════════════════════════════════════════════════════
+       NAVIGATION BAR
+       ═══════════════════════════════════════════════════════════ -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">☕TS</a>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about me</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="career.html">career</a></li>
+                <li><a href="hobbies.html" class="active">hobbies & blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════════════════════
+       MAIN CONTENT - Blog index
+       ═══════════════════════════════════════════════════════════ -->
+    <div class="container">
+        <h1>Blog</h1>
+
+        <div class="section">
+            <p>Welcome to the hobbies and blog side of my site where you can read through my rambles on games and more!.</p>
+            <div id="posts-list" class="cards-container"></div>
+        </div>
+    </div>
+
+    <!-- Instagram Feed / Social Updates -->
+    <div class="section">
+        <h2>Social Updates</h2>
+        <p>
+            Want to see more of my day-to-day? Follow me on Instagram where I share
+            gaming screenshots, book reviews, cozy aesthetics, and whatever else I'm into!
+        </p>
+
+        <!-- Note: Instagram embedding requires their API or manual updates -->
+        <div class="hobby-grid">
+            <div class="hobby-item">
+                <h3>Latest from Instagram</h3>
+                <p>
+                    Follow along with my latest adventures, gaming moments, and book finds!
+                </p>
+                <a href="https://instagram.com/codedbytea" class="card-link" target="_blank">
+                    Follow on Instagram →
+                </a>
+            </div>
+
+            <div class="hobby-item">
+                <h3>More About Me</h3>
+                <p>
+                    🎮 <a href="https://www.twitch.tv/codedbytea" target="_blank">Twitch</a>
+                    - Watch me game<br>
+                    📚 <a href="https://pagebound.co/users/CodedBytea" target="_blank">Pagebound</a>
+                    - Reading journey<br>
+                    💼 <a href="https://github.com/TayyebaSadaq" target="_blank">GitHub</a>
+                    - My projects
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- ═══════════════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════════════ -->
+    <footer>
+        <p>Made with ♡ by Tayyeba | 2025</p>
+    </footer>
+
+     <!-- Markdown renderer and sanitizer, plus our post loader -->
+     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/dompurify@2.4.0/dist/purify.min.js"></script>
+     <script src="js/hobbies.js"></script>
+
+</body>
+
+</html>

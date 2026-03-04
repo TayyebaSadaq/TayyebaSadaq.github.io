@@ -1,0 +1,69 @@
+[
+  {
+    "company": "HSS ProService Marketplace",
+    "time": "Sep 2025 - Present",
+    "duration": "12 mons",
+    "role": "Reporting Analyst",
+    "type": "Full-time",
+    "location": "Remote, United Kingdom",
+    "description": "Currently working as a Reporting Analyst, focusing on data analysis and report generation."
+  },
+  {
+    "company": "Project: Lean on Me (Non-Profit)",
+    "time": "Jul 2025 - Present",
+    "duration": "6 mons",
+    "role": "Mental Health Research Intern",
+    "type": "Internship",
+    "location": "Remote",
+    "description": "Conducting research on adolescent mental health, with focus on developmental, academic, and social impact. Collaborating with a youth-led nonprofit to develop educational content for social media and future website launch."
+  },
+  {
+    "company": "Go Logistics Limited",
+    "time": "Jun 2025 - Sep 2025",
+    "duration": "12 mons",
+    "role": "Digital Operations Assistant",
+    "type": "Part-time",
+    "location": "Remote, Derby, England, United Kingdom",
+    "description": "Supported early-stage company setup, including logo design and completing Companies House registration. Assisted with general admin tasks and provided PA-style support to founders. Currently planning the company's digital presence, including social media strategy and future website development.",
+    "skills": ["Logo Design", "Office Administration", "Research Skills", "Project Planning"]
+  },
+  {
+    "company": "Honda Atlas Cars (Pakistan) Limited",
+    "time": "Jul 2025 - Aug 2025",
+    "duration": "2 mons",
+    "role": "SAP and Software Development Intern",
+    "type": "Internship",
+    "location": "Remote",
+    "description": "Completed a focused 1:1 mentorship-based internship exploring SAP systems and architecture within an enterprise environment. Gained foundational understanding of SAP modules, system structure, and internal data flow. Learned about standard and custom table usage (e.g., MARA, Z-tables) and their role in managing business processes. Observed the integration of SAP APIs with frontend tools such as ASP.NET. Developed awareness of SAP BTP (Business Technology Platform) and modern approaches to cloud-based enterprise solutions. Practiced hands on with SAP system and ABAP.",
+    "skills": ["SAP Products", "SAP Implementation", "ABAP", "Organization Skills"]
+  },
+  {
+    "company": "Bright Network",
+    "time": "Jun 2024",
+    "duration": "1 mon",
+    "role": "IEUK Technology 2024",
+    "type": "Internship",
+    "location": "Remote",
+    "description": "Took part in the IEUK 2024 Technology Internship program."
+  },
+  {
+    "company": "The Gas Guy",
+    "time": "Jan 2022 - May 2024",
+    "duration": "2 yrs 5 mons",
+    "role": "Digital Support Assistant",
+    "type": "Part-time",
+    "location": "Remote, Derby, England, United Kingdom",
+    "description": "Designed the company logo and created custom invoice templates for client use. Managed the business's Instagram presence to support local outreach. Assisted with day-to-day digital admin and branding tasks as needed.",
+    "skills": ["Social Media Marketing", "Social Media Advertising", "Office Administration"]
+  },
+  {
+    "company": "SUBSTORES LIMITED",
+    "time": "Oct 2021 - May 2023",
+    "duration": "1 yr 8 mons",
+    "role": "Sandwich Maker",
+    "type": "Part-time",
+    "location": "On-site, Derby, England, United Kingdom",
+    "description": "Worked as part of a customer-facing team, developing strong communication and teamwork skills.",
+    "skills": ["Communication", "Teamwork", "Customer Service"]
+  }
+]

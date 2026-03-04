@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Diabetes Prediction Research",
+    "description": "Extended research on diabetes prediction using machine learning and Explainable AI (XAI). Advanced models focusing on prediction accuracy and interpretability.",
+    "image": "",
+    "repo": "https://github.com/TayyebaSadaq/diabetes-prediction-research"
+  },
+  {
+    "name": "Mindful Breaks",
+    "description": "Pomodoro timer website designed to help manage screen time and prevent overwork. Features breathing exercises and work session tracking.",
+    "image": "",
+    "repo": "https://github.com/TayyebaSadaq/Mindful-Breaks"
+  },
+  {
+    "name": "MiniLang Interpreter",
+    "description": "A Python-based programming language interpreter from scratch. Supports variables, loops, lists, conditionals, and more.",
+    "image": "",
+    "repo": "https://github.com/TayyebaSadaq/Language-design-and-implementation"
+  },
+  {
+    "name": "Book Recommendation System",
+    "description": "Goodreads scraper and machine learning-based book recommendation system. Analyzes reading patterns to suggest personalized recommendations.",
+    "image": "",
+    "repo": "https://github.com/TayyebaSadaq/Book-Recommendation-System"
+  },
+  {
+    "name": "Patient Experience AI",
+    "description": "Research-based project exploring how AI can improve patient experience in healthcare settings. Predictive models for healthcare optimization.",
+    "image": "",
+    "repo": "https://github.com/TayyebaSadaq/Improving-Patient-experience-using-AI"
+  },
+  {
+    "name": "Data Mining & Patient Analysis",
+    "description": "Working with patient appointment datasets to determine likelihood of attendance using data mining and machine learning techniques.",
+    "image": "",
+    "repo": "https://github.com/TayyebaSadaq/data-mining-and-AI"
+  },
+  {
+    "name": "Real-Time Chat App",
+    "description": "IoT chat application with RSA encryption and decryption. Built with Python and Tkinter for secure real-time communication.",
+    "image": "",
+    "repo": "https://github.com/TayyebaSadaq/Real-Time-Chat-App"
+  },
+  {
+    "name": "Recipe Roulette",
+    "description": "Dynamic recipe generator based on dietary requirements. Web application built with HTML, CSS, and JavaScript.",
+    "image": "",
+    "repo": "https://github.com/TayyebaSadaq/Recipe-Roulette"
+  },
+  {
+    "name": "Car Insurance System",
+    "description": "Comprehensive car insurance data management dashboard using PHP. Handles policy management and customer data.",
+    "image": "",
+    "repo": "https://github.com/TayyebaSadaq/Car-Insurance-System"
+  },
+  {
+    "name": "3D Computer Graphics",
+    "description": "Advanced 3D graphics programming in C++. Exploring rendering, transformations, and computer graphics principles.",
+    "image": "",
+    "repo": "https://github.com/TayyebaSadaq/3D-ComputerGraphics"
+  }
+]
