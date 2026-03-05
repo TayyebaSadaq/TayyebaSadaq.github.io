@@ -6,22 +6,10 @@
     "repo": "https://github.com/TayyebaSadaq/diabetes-prediction-research"
   },
   {
-    "name": "Mindful Breaks",
-    "description": "Pomodoro timer website designed to help manage screen time and prevent overwork. Features breathing exercises and work session tracking.",
-    "image": "",
-    "repo": "https://github.com/TayyebaSadaq/Mindful-Breaks"
-  },
-  {
     "name": "MiniLang Interpreter",
     "description": "A Python-based programming language interpreter from scratch. Supports variables, loops, lists, conditionals, and more.",
     "image": "",
     "repo": "https://github.com/TayyebaSadaq/Language-design-and-implementation"
-  },
-  {
-    "name": "Book Recommendation System",
-    "description": "Goodreads scraper and machine learning-based book recommendation system. Analyzes reading patterns to suggest personalized recommendations.",
-    "image": "",
-    "repo": "https://github.com/TayyebaSadaq/Book-Recommendation-System"
   },
   {
     "name": "Patient Experience AI",
@@ -40,18 +28,6 @@
     "description": "IoT chat application with RSA encryption and decryption. Built with Python and Tkinter for secure real-time communication.",
     "image": "",
     "repo": "https://github.com/TayyebaSadaq/Real-Time-Chat-App"
-  },
-  {
-    "name": "Recipe Roulette",
-    "description": "Dynamic recipe generator based on dietary requirements. Web application built with HTML, CSS, and JavaScript.",
-    "image": "",
-    "repo": "https://github.com/TayyebaSadaq/Recipe-Roulette"
-  },
-  {
-    "name": "Car Insurance System",
-    "description": "Comprehensive car insurance data management dashboard using PHP. Handles policy management and customer data.",
-    "image": "",
-    "repo": "https://github.com/TayyebaSadaq/Car-Insurance-System"
   },
   {
     "name": "3D Computer Graphics",
