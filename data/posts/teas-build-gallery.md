@@ -1,5 +1,0 @@
-![Barn](images/build-gallery/barn.png)
-![Farm](images/build-gallery/farm.png)
-![House](images/build-gallery/house.png)
-![Picnic](images/build-gallery/picnic.png)
-![Pool](images/build-gallery/pool.png)

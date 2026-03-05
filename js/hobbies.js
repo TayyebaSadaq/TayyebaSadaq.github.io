@@ -1,4 +1,4 @@
-// Fetch posts index and render as clickable cards
+// Fetch posts index and render as clickable cards (links go to external Substack posts)
 async function loadPosts() {
   const list = document.getElementById('posts-list');
   list.innerHTML = '<div class="loading">Loading posts…</div>';
@@ -18,7 +18,7 @@ async function loadPosts() {
         <h3>${p.title}</h3>
         <div class="meta">${p.date}</div>
         <p class="post-excerpt">${p.excerpt}</p>
-        <a class="card-link" href="post-detail.html?slug=${encodeURIComponent(p.slug)}">Read →</a>
+        <a class="card-link" href="${p.link}" target="_blank" rel="noopener noreferrer">Read on Substack →</a>
       </article>
     `).join('');
 
