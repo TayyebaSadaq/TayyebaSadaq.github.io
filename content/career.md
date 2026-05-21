@@ -10,4 +10,4 @@ I analyse and transform large operational datasets using SQL and BI tools to sur
 A two-month internship that gave me exposure to how enterprise-scale systems actually work in practice. I explored SAP module integration, ABAP scripting, and API connectivity with ASP.NET front-end tools. Working with ERP data flows in a manufacturing context gave me a useful lens for thinking about how data moves through large organisations — and the forensic questions that follow when it doesn't move the way it should.
 
 ## Where I'm headed
-Currently working toward roles in Digital Forensics and Incident Response. Open to DFIR analyst, junior SOC, and cyber investigation opportunities.
+Currently working toward roles in threat intelligence and security operations. Open to DFIR analyst, junior SOC, and cyber investigation opportunities.
